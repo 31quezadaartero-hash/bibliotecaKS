@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Osito Lector — Misión y visión</title>
+<link rel="icon" type="image/jpeg" href="logo2.jpg">
+<!-- Bootstrap primero, tu CSS después (para que el tuyo tenga prioridad) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= ENCABEZADO ================= -->
+<header class="encabezado">
+  <nav class="nav-principal contenedor">
+    <div class="nav-marca">
+      <div class="logo-slot" id="logo-institucional">
+        <img src="logo3.png" alt="Logo de Osito Lector"
+             onload="this.parentElement.style.border='none';"
+             onerror="var p=this.parentElement; this.remove(); p.classList.add('sin-logo');">
+      </div>
+      <a href="index.html" class="wordmark">Osito Lector</a>
+    </div>
+
+    <!-- Botón hamburguesa controlado por Bootstrap (Collapse) -->
+    <button class="nav-toggle" type="button"
+            data-bs-toggle="collapse" data-bs-target="#nav-links"
+            aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menú">☰</button>
+
+    <div class="nav-links collapse" id="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="mision-vision.html" class="activo">Nosotros</a>
+      <a href="funciones.html">Funciones</a>
+      <a href="como-funciona.html">Cómo funciona</a>
+      <a href="contacto.html" class="boton boton-primario">Solicitar acceso</a>
+    </div>
+  </nav>
+</header>
+
+<section class="mision-vision" style="padding-top:70px;">
+  <div class="contenedor">
+    <div class="encabezado-seccion">
+      <span class="kicker">Nuestro propósito</span>
+      <h2>Misión y visión</h2>
+      <p>Por qué existe este proyecto y hacia dónde queremos llevarlo.</p>
+    </div>
+    <div class="mv-grid">
+      <div class="mv-tarjeta">
+        <div class="mv-icono">🎯</div>
+        <h3>Misión</h3>
+        <p>Facilitar el control y seguimiento de los libros, préstamos y lecturas de la biblioteca mediante un sistema digital sencillo, ordenado y accesible tanto para quien la administra como para quien la usa día a día.</p>
+      </div>
+      <div class="mv-tarjeta">
+        <div class="mv-icono">🌱</div>
+        <h3>Visión</h3>
+        <p>Convertirnos en la herramienta de referencia para bibliotecas escolares y personales que quieren dejar atrás el papel y llevar su gestión de forma moderna, confiable y cercana, sin perder la calidez de una biblioteca de verdad.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="contenedor footer-grid">
+    <div class="footer-marca">
+      <div class="logo-slot" id="logo-footer" style="width:40px;height:40px;font-size:0.5rem;">
+        <img src="logo2.jpg" alt="Logo de Osito Lector"
+             onload="this.parentElement.style.border='none';"
+             onerror="var p=this.parentElement; this.remove(); p.classList.add('sin-logo');">
+      </div>
+      <span class="wordmark">Osito Lector</span>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h5>Navegación</h5>
+        <a href="index.html">Inicio</a>
+        <a href="mision-vision.html">Misión y visión</a>
+        <a href="funciones.html">Funciones</a>
+      </div>
+      <div>
+        <h5>Proyecto</h5>
+        <a href="como-funciona.html">Cómo funciona</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </div>
+  <p class="footer-nota">© 2026 Osito Lector — Proyecto Módulo 3.1, Desarrollo de Software.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Osito Lector — Funciones</title>
+<link rel="icon" type="image/jpeg" href="logo2.jpg">
+<!-- Bootstrap primero, tu CSS después (para que el tuyo tenga prioridad) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= ENCABEZADO ================= -->
+<header class="encabezado">
+  <nav class="nav-principal contenedor">
+    <div class="nav-marca">
+      <div class="logo-slot" id="logo-institucional">
+        <img src="logo3.png" alt="Logo de Osito Lector"
+             onload="this.parentElement.style.border='none';"
+             onerror="var p=this.parentElement; this.remove(); p.classList.add('sin-logo');">
+      </div>
+      <a href="index.html" class="wordmark">Osito Lector</a>
+    </div>
+
+    <!-- Botón hamburguesa controlado por Bootstrap (Collapse) -->
+    <button class="nav-toggle" type="button"
+            data-bs-toggle="collapse" data-bs-target="#nav-links"
+            aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menú">☰</button>
+
+    <div class="nav-links collapse" id="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="mision-vision.html">Nosotros</a>
+      <a href="funciones.html" class="activo">Funciones</a>
+      <a href="como-funciona.html">Cómo funciona</a>
+      <a href="contacto.html" class="boton boton-primario">Solicitar acceso</a>
+    </div>
+  </nav>
+</header>
+
+<main class="pagina-funciones">
+
+  <section class="funciones-hero">
+    <div class="contenedor">
+      <div class="encabezado-seccion">
+        <span class="kicker">LO QUE PUEDES HACER</span>
+        <h1>Todo lo que necesitas<br>para organizar tu biblioteca.</h1>
+        <p>Osito Lector reúne en un solo lugar las herramientas necesarias para registrar, organizar y consultar tus libros de forma sencilla.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="funciones-contenido">
+    <div class="contenedor">
+      <div class="funciones-intro">
+        <div>
+          <span class="kicker">FUNCIONES PRINCIPALES</span>
+          <h2>Una biblioteca más<br>fácil de administrar.</h2>
+        </div>
+        <p>Desde registrar un libro hasta consultar estadísticas, cada función está pensada para mantener toda la información organizada y fácil de encontrar.</p>
+      </div>
+      <div class="funciones-grid">
+        <article class="funcion-card funcion-destacada">
+          <span class="funcion-numero">01</span>
+          <div class="funcion-icono">🏠</div>
+          <h3>Dashboard</h3>
+          <p>Consulta de un vistazo los libros, préstamos, ejemplares disponibles y actividad de la biblioteca.</p>
+          <span class="funcion-etiqueta">Vista general</span>
+        </article>
+
+        <article class="funcion-card">
+          <span class="funcion-numero">02</span>
+          <div class="funcion-icono">📚</div>
+          <h3>Gestión de libros</h3>
+          <p>Agrega, edita, elimina y busca libros utilizando información como título, autor y categoría.</p>
+          <span class="funcion-etiqueta">Catálogo</span>
+        </article>
+
+        <article class="funcion-card">
+          <span class="funcion-numero">03</span>
+          <div class="funcion-icono">⭐</div>
+          <h3>Registrar leído</h3>
+          <p>Guarda tus lecturas, añade una calificación y conserva tus opiniones sobre cada libro.</p>
+          <span class="funcion-etiqueta">Lecturas</span>
+        </article>
+
+        <article class="funcion-card">
+          <span class="funcion-numero">04</span>
+          <div class="funcion-icono">🗂️</div>
+          <h3>Catálogo visual</h3>
+          <p>Explora los libros mediante tarjetas con portada, autor, categoría y disponibilidad.</p>
+          <span class="funcion-etiqueta">Exploración</span>
+        </article>
+
+        <article class="funcion-card">
+          <span class="funcion-numero">05</span>
+          <div class="funcion-icono">🔄</div>
+          <h3>Préstamos</h3>
+          <p>Registra los préstamos y controla las fechas de devolución de cada ejemplar.</p>
+          <span class="funcion-etiqueta">Control</span>
+        </article>
+
+        <article class="funcion-card">
+          <span class="funcion-numero">06</span>
+          <div class="funcion-icono">🕘</div>
+          <h3>Historial</h3>
+          <p>Consulta las lecturas y préstamos anteriores junto con sus fechas y calificaciones.</p>
+          <span class="funcion-etiqueta">Registro</span>
+        </article>
+
+        <article class="funcion-card">
+          <span class="funcion-numero">07</span>
+          <div class="funcion-icono">👥</div>
+          <h3>Usuarios</h3>
+          <p>Administra los usuarios registrados y consulta su actividad dentro de la biblioteca.</p>
+          <span class="funcion-etiqueta">Administración</span>
+        </article>
+
+        <article class="funcion-card">
+          <span class="funcion-numero">08</span>
+          <div class="funcion-icono">📊</div>
+          <h3>Reportes</h3>
+          <p>Visualiza información sobre los libros más populares, autores y categorías favoritas.</p>
+          <span class="funcion-etiqueta">Estadísticas</span>
+        </article>
+
+        <article class="funcion-card">
+          <span class="funcion-numero">09</span>
+          <div class="funcion-icono">🔐</div>
+          <h3>Acceso seguro</h3>
+          <p>Protege el acceso mediante usuario y contraseña, con opciones para recuperar la cuenta.</p>
+          <span class="funcion-etiqueta">Seguridad</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="funciones-cierre">
+    <div class="contenedor">
+      <div class="funciones-cierre-card">
+        <div>
+          <span class="kicker">TODO EN UN SOLO LUGAR</span>
+          <h2>Menos desorden.<br>Más control.</h2>
+          <p>Una biblioteca organizada hace que encontrar, registrar y disfrutar tus libros sea mucho más sencillo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="contenedor footer-grid">
+    <div class="footer-marca">
+      <div class="logo-slot" id="logo-footer" style="width:40px;height:40px;font-size:0.5rem;">
+        <img src="logo2.jpg" alt="Logo de Osito Lector"
+             onload="this.parentElement.style.border='none';"
+             onerror="var p=this.parentElement; this.remove(); p.classList.add('sin-logo');">
+      </div>
+      <span class="wordmark">Osito Lector</span>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h5>Navegación</h5>
+        <a href="index.html">Inicio</a>
+        <a href="mision-vision.html">Misión y visión</a>
+        <a href="funciones.html">Funciones</a>
+      </div>
+      <div>
+        <h5>Proyecto</h5>
+        <a href="como-funciona.html">Cómo funciona</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </div>
+  <p class="footer-nota">© 2026 Osito Lector — Proyecto Módulo 3.1, Desarrollo de Software.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
